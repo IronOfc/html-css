@@ -1,0 +1,375 @@
+Quem não quer ficar colocando o pt-br toda hora na estrutura padrão do html criado pelo snippet pode configurar uma variável de ambiente indo em Arquivo > Preferências > Configurações, depois pesquisa por "variáveis emmet" e depois clica em adicionar item e cria a variável lang e o valor coloca pt-br. Aí todas as vezes que pressionar o ! + Enter ele já vai criar o código padrão com o parâmetro lang="pt-br"
+
+github.com/gustavoguanabara
+
+gustavoguanabara.github.io
+
+procurar sobre SEO
+
+imagens com 50 a 70 de resolução, com 1500 de largura no maximo, com 70 de qualidade ou até menos
+
+icone 100x100
+
+<hr> linha horizontal
+
+<br> quebra de linha
+
+&lt; sinal de menor
+
+&gt; sinal de maior
+
+<!-- --> comentário
+
+&reg; marca registrada
+
+&copy; copyright
+
+&trade; trade mark
+
+&euro; moeda euro
+
+&pound; moeda pound ou libra?(inglaterra)
+
+&yen; moeda japonesa
+
+&cent; centavo americano
+
+&Delta; delta
+
+&uparrow; seta pra cima
+
+Se quiser mais símbolos procurar por miscsimbols
+
+<address> Endereço
+
+crtl + shift + p (envolver com abreviação)
+
+<strong> Negrito
+
+<em> Itálico
+
+<mark> Marca texto
+
+<big>* Texto grande
+
+<small> Texto pequeno
+
+<del> texto excluido ou "riscado"
+
+<ins> texto inserido ou "sublinhado"
+
+<sup> texto sobrescrito ex: um numero elevado a outro numero
+
+<sub> texto subscrito ex: o numero 2 da formula da agua
+
+<code> fonte monoespaçada, ótimo para se ler códigos
+
+<pre> pré-formatação, considera todos os espaçamentos e identações digitados no texto
+
+<q> citação simples, colocar o texto entre aspas
+
+<blockquote cite"colocar url da citação"> citação completa, identa o bloco do texto para a esquerda como uma citação
+
+<abbr title = "colocar significado da abreviação"> abreviação, cria um popup quando colocar o mouse em cima da abreviação mostrando o sgnificado dela
+
+<bdo> deixa o texto invertido, podendo ser bdo:l: "esquerda para direita" ou bdo:r: "direita para esquerda"
+
+<ol type="o tipo da lista, se é numérica, numeros romanos ou com letras" start="em qual numero começará a lista"> lista ordenada
+
+<li> item de lista, tabula o conteudo dentro da lista, o fechamento dessa tag é opicional
+
+<ul type="tipo do marcador utilizado na lista, disc, circle ou square"> lista nao ordenada
+
+<dl> lista de definição, <dt> termo, <dd> descrição
+
+<link rel="shortcut icon"> Colocar icone
+
+<a target="_blank" para abrir em uma nova guia, target="_self" caso queira referenciar que a pagina é no seu proprio site, rel="external" para dizer que é externo, rel="next" para proxima pagina, rel="prev" para pagina anterior, rel="nofollow" caso o link nao tenha seu aval, download="nome do arquivo" e o type="audio/mpeg ou application/zip ou /pdf" para baixar algo pelo link> ancora, cria um link.
+
+../ caso queira voltar para uma pagina em outra pasta
+
+<picture> utilizado para colocar vários img dentro para criar imagen dinamica, a primeira imagem se utiliza o img e as outras utiliza-se o <source>(media-type) com max-width
+
+<audio> com parametro controls para mostrar botao de play, com loop caso queria repetir automaticamente, para reproduzir audios. Tambem pode ser utilizado a tag source:src dentro da tag audio podendo colocar o preload="none, metadata ou autoplay" lembrando do type="audio/mpeg"
+
+<video> para colocar video, segue o mesmo padrao da tag <audio> podendo utilizar o <source> usando o type="video/mp4" podendo usar tbm o width="" para definir a largura do video e o poster="" para definir uma imagem como capa do video
+
+<span></span> demarca um trecho do texto
+<selection> dentro do selection se usa o <option>
+
+
+CSS
+
+@charset "UTF-8";
+
+*{} configuração global CSS
+
+/* */ comentario CSS
+
+45deg = 45 graus
+
+background-image: linear-gradient(to top ou to right, as duas cores escolhidas) ou radial-gradient()
+
+recomendado utilizar as fontes em px ou em
+
+16px geralmente = 1em que é o tamanho padrão da fonte usado pelos navegadores
+
+weight = peso => lighter, normal, bold, bolder ou do 100 ao 900
+
+width = largura
+
+height = altura
+
+fonte com todas as variaçoes "Work Sans"
+
+italico = font-style: italic
+
+sublinhado = text-decoration: underline
+
+shorthand para fontes = font-style -> font-height -> font-size -> font-family
+
+@font-face{src: url("") format("")} criar uma familia de fonte a partir de uma fonte baixada, tipos de format -> opentype(otf), truetype(ttf), embedded-opentype, truetype-aat(apple advanced typography), svg
+
+text-indent: 30px para adicionar espaço no inicio do paragrafo
+
+text-align: justify ou left ou right
+
+id em html = # em css
+
+class em html = . em css
+
+: = pseudoclasses
+
+:hover = interage quando passa o mouse em cima
+
+div > p = altere apenas os p que estao dentro das div(p é filho da div)
+
+display none desaparece, display block aparece
+
+:visited quando o link foi visitado
+
+:active quando clicka
+
+:: = pseudoelemento, colocar alguma informaçao antes ou depois de algo sem modificar o html
+
+<div> box-level
+
+<span> inline-level
+
+border-style: solid
+
+margin: auto = centralizar uma box
+
+colocar margin negativa caso queira recuar a margem
+
+outline = tracejado entre a borda e a margem, ocupando uma parte do espaço da margem
+
+shorthand para border ou outline= border/outline-width -> border/ouline-style -> border/ouline-color
+
+display: block(box-level) ou inline(inline-level)
+
+<body>
+    <header>
+        <h1>Meu Site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <p>Esportes Política Tecnologia</p>
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Notícia sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing 		elit. Dolorum corporis autem similique pariatur mollitia 		architecto, veniam, molestiae voluptatem quas non 		praesentium cum quibusdam possimus eveniet! Voluptate 		dolor perferendis maiores doloribus!</p>
+                <aside>
+                    <p>Artigo escrito por José da Silva</p>
+                </aside>
+            </article>
+            <article>
+
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido pelo CursoemVideo</p>
+    </footer>
+</body>
+
+box-shadow = sombra na caixa
+
+box-shadow: inset = sombra interna
+
+border-imaga-source: url("") = colocar imagem em borda
+
+border-image-slice: 27(numero qualquer); = fatiar imagem
+
+border-image-repeat: repeat ou stretch
+
+shorthand = border-image: url("") 27(slice) repeat;
+
+:root para colocar variaveis no css, toda variavel deve começar com -- antes do nome
+
+responsividade:
+
+1000 a 1200 de largura para um site, lembrando de colocar min-width e max-width. ex: min-width: 300px e max-width: 1000px
+
+margin: auto para centralizar, usar min-width e max-width e para deixar uma imagem proporcional utilizar width 100%
+
+text-indent para recuo do texto no inicio do paragrafo, ex: 30px
+
+line-height para espaçamento entre linhas, ex: 1em
+
+list-style-position: inside; para colocar a lista dentro
+
+columns: (quantidade de colunas); para dividir a lista em colunas
+
+list-style-type: "\2714\00A0\00A0"; para acrescentar o "check" na lista. procurar no emojipedia e pegar o codigo da imagem sem o U+, lembrando que \00A0 é o espaço sem quebra para afastar a imagem da lista
+
+JS
+
+typeof saber o tipo da variavel
+
+window.alert("") mostrar mensagem na tela
+
+window.confirm("") solicita confirmaçao do usuário
+
+window.prompt("") solicitar algum dado de entrada
+
+window.document.write("") escrever algo no documento
+
+Number.parseInt(n) converter para inteiro
+
+Number.parseFloat(n) converter para real
+
+Number(n) converter para numero de um modo geral
+
+String(n) ou n.toString() para converter em string
+
+Eu estou aprendendo ${s} template string com placeholder
+
+n.length quantos caracteres a string tem
+
+n.toUpperCase() tudo para MAIÚSCULAS
+
+n.toLowerCase() tudo para minúsculas
+
+document.write("") escrever na pagina algo
+
+n1.toFixed(2) para acrescentar uma segunda casa decimal após a virgula
+
+n1.toFixed(2).replace(".", ",") para trocar o ponto por a virgula
+
+n1.toLocaleString("pt-BR", {style: "currency", currency: "BRL" ou "USD" ou "EUR"}) para transformar o numero em quantia de dinheiro
+% resto da divisao
+
+** potencia
+
+n = n + 4 pode ser n += 4
+
+n = n + 1 pode ser n++ ou ++n
+
+n = n - 1 pode ser n-- ou --n
+
+! negação not
+
+&& conjunçao ou E
+
+|| disjunçao ou OU
+
+ternário: média >= 7.0 ? "aprovado" : "reprovado"
+
+document.getElementsByTagName("")[0] selecionar objeto por Marca(Tag)
+
+document.write(p1.innerText) para escrever o que esta dentro da var p1
+
+p1.innerText = "" para alterar o que esta escrito dentro de p1
+
+document.write(p1.innerHTML) para escrever o que esta dentro da var p1 ja com a formataçao
+
+p1.style.color = "blue" mudar o p1 para azul
+
+document.querySelector("") selecionar por seletor, ex: querySelector("div#msg") para id ou ("div.msg") para classes
+
+mouseenter quando o mouse entra na div
+
+mouseout quando o mouse sai da div
+
+mousemove quando o mouse se move na div
+
+mousedown quando clicka e segura
+
+mouseup quando solta o click
+
+onload quando carregar
+
+click para um click completo
+
+variavel.addEventListener("", nome da functiona)
+
+console.log para escrever no console do nodejs
+
+var agora = new Date() para pegar a data
+
+var = agora.getHours() para pegar a hora
+
+switch(){
+  case 0:
+    código
+    break
+  default:
+}
+
+var = document.createElement("img") para criar um elemento direto no js
+
+img.setAttribute("id", "foto") para setar o id foto para img
+
+img.setAttribute("src", "foto-bebe-m.png") para colocar a imagem dentro de img
+
+do{
+}while(condicao)
+
+\u{emote}
+
+para criar um elemento e acrescentar o elemento criado ->
+item = document.createElement("option")
+
+tab.appendChild(item)
+
+i = Number(inicio.value)
+
+f = Number(fim.value)
+
+p = Number(passo.value)
+
+for(c = i; c <= f; c += p){
+res.innerHTML += ` ${c} \u{1F449}`
+}
+
+num.push(7) acrescenta o valor 7 no final do array
+num.length comprimento da lista
+num.sort() coloca os valores da lista em ordem crescente
+num.indexOf(7) mostra em que posiçao esta o valor 7
+
+for(pos = 0; pos < valores.length; pos++){
+    console.log(`A posição ${pos} tem o valor ${valores[pos]}`)
+}
+for(pos in num){
+    console.log(`A posição ${pos} tem o valor ${valores[pos]}`)
+}
+
+num.focus() para manter o cursor no num
+amigo = {nome:"José", sexo:"M", peso:"85.4", engordar(p){}} criando um objeto
+
+amigo = {nome:"José", sexo:"M", peso:85.4, 
+engordar(p){
+    this.peso += p
+}}
+
+amigo.engordar(2)
+console.log(`${amigo.nome} pesa ${amigo.peso}Kg`)

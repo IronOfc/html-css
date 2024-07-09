@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iframes</title>
+</head>
+<body>
+    <h1>Meu site principal</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt voluptatum sed praesentium quo consectetur velit quod vero dicta, earum doloremque dignissimos, repellendus dolorum illum cum est aliquam sapiente. Quasi, laudantium.
+    Fugiat optio exercitationem nemo et recusandae iure! Neque laudantium dolorem odio necessitatibus possimus hic voluptate! Eaque eum voluptas labore blanditiis sequi. Officiis totam nemo vero voluptatem tempore tempora vel enim?</p>
+
+        <iframe src="pagina01.html" frameborder="1" sandbox="allow-same-origin allow-forms allow-scripts" referrerpolicy="no-referrer">
+            <p>Seu navegador não é compatível com isso...</p>
+        </iframe>
+        <!-- Configurações de segurança para iframes:
+            sandbox="sandbox" -> bloqueia qualquer acesso que outros sites que estejam dentro do iframe possam ter (todas as configurações de segurança no máximo)
+            referrerpolicy ="no-referrer" -> o conteúdo dentro do iframe não vai coletar nenhum tipo de informação do usuário
+            sandbox="allow-same-origin" -> permitir conteúdo de mesma origem
+            sandbox= "allow-forms" -> permitir forumlários
+            sandbox= "allow-scripts" -> permitir scripts
+        -->
+
+        <iframe src="pagina02.html" frameborder="1" referrerpolicy="no-referrer" sandbox="allow-scripts"></iframe>
+
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique quia obcaecati cupiditate numquam illo nam odit impedit voluptates atque vel accusamus voluptatibus dolor minus, omnis at! Excepturi nihil asperiores repellendus.
+    Eum, voluptatem culpa asperiores quis sint, aut hic doloribus repellendus incidunt sunt placeat? Quia doloremque fuga quo natus facere neque facilis sint tenetur atque, incidunt eligendi, obcaecati voluptatum. Fuga, laboriosam.</p>
+</body>
+</html>
