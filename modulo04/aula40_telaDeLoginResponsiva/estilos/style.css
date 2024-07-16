@@ -34,9 +34,12 @@ section#login {
     left: 50%;
     transform: translate(-50%, -50%);
     overflow: hidden;
+
+    transition: width .3s, height .3s;
+    transition-timing-function: ease;
 }
 
-section#login div#imagem {
+div#imagem {
     display: block;
     background: #5f2c82 url(../imagens/metal.jpg) no-repeat;
     background-size: cover;
@@ -44,7 +47,7 @@ section#login div#imagem {
     height: 200px;
 }
 
-section#login div#formulario {
+div#formulario {
     display: block;
     padding: 10px;
 }
